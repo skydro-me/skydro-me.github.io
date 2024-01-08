@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Skydrome",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/skydrome_1.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "mbrsiteDomain": "bwpnmraemr",
+    "robotsSwitcher": true,
+    "sitemapSwitcher": true,
+    "sitemapSwitcherAuto": "on",
+    "siteUrl": "https://skydro-me.github.io/",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0",
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://skydro-me.github.io/sitemap.xml\n\n\n"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "SKYDROME™ | Home Official Site",
+        "meta_descr": "Skydrome has a decentralized Token Generation Event (TGE) that welcomes regular users within the Skydrome ecosystem, and supports protocols looking to build liquidity.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://skydrome.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/skydrome.png\" alt=\"SKYDROME\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZE6YjA1ox",
+          "_anchor": "image04-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>SKYDROME™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipping options</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b><a href=\"https://skydro-me.github.io/\" class=\"text-primary\"><b>Skydrome</b></a>: Revolutionizing Aerial Mobility with Urban Airports\n</b><br>\n<br><b>Introduction \n</b><br>In the rapidly evolving world of transportation, the concept of urban air mobility (UAM) has gained significant attention. Skydrome, an innovative company, is at the forefront of this revolution, envisioning a future where urban airports seamlessly integrate air taxis, drones, and other aerial vehicles into our daily lives. By developing advanced infrastructure and cutting-edge technologies, <a href=\"https://skydrome.finance/\" class=\"text-primary\"><b>Skydrome</b></a> aims to reshape urban transportation, offering faster, efficient, and sustainable travel options. In this article, we will explore the intricacies of Skydrome, delve into its unique features, and examine how it is shaping the future of aerial mobility.\n<br>\n<br><b>The Need for Urban Air Mobility \n</b><br>As cities around the world continue to grow, traditional transportation systems face increasing challenges such as traffic congestion, pollution, and limited infrastructure. Urban air mobility presents a solution by utilizing the untapped potential of the airspace above cities, providing faster and more efficient transportation options for both passengers and cargo.\n<br>\n<br><b>Understanding Skydrome's Vision \n</b><br>Skydrome envisions a future where aerial mobility seamlessly integrates with existing transportation systems. Their urban airports, equipped with advanced infrastructure, serve as hubs for air taxis, drones, and other aerial vehicles. These airports provide convenient takeoff, landing, and charging facilities, enabling safe and efficient operations within the urban environment.\n<br>\n<br><b>The Components of Skydrome's Urban Airports \n</b><br>Skydrome's urban airports consist of several key components:\n<br>\n<br>a. Vertiport Infrastructure: Vertiports are landing and takeoff facilities designed specifically for electric vertical takeoff and landing (eVTOL) aircraft, commonly known as air taxis. Skydrome's vertiports are strategically located within cities, allowing for efficient and convenient travel. These infrastructure components include landing pads, charging stations, passenger terminals, and maintenance facilities.\n<br>\n<br>b. Air Traffic Management: Skydrome incorporates advanced air traffic management systems to ensure safe and efficient operations within urban airspace. These systems employ cutting-edge technologies such as artificial intelligence (AI), machine learning (ML), and real-time data analysis to manage and optimize the movement of aerial vehicles, minimizing congestion and maximizing safety.\n<br>\n<br>c. Integration with Ground Transportation: Skydrome's urban airports are designed to seamlessly integrate with existing ground transportation networks, providing passengers with a seamless travel experience. This integration allows for easy transfer between air taxis and other modes of transportation, facilitating door-to-door journeys.\n<br>\n<br>d. Sustainability and Environmental Considerations: Skydrome places a strong emphasis on sustainability. By utilizing electric-powered air taxis and drones, Skydrome aims to reduce carbon emissions and contribute to a cleaner and greener urban environment.\n<br>\n<br><b>The Benefits of Skydrome's Urban Airports \n</b><br>Skydrome's urban airports offer numerous benefits that can reshape urban transportation:\n<br>a. Reduced Travel Time: Air taxis and drones operating from Skydrome's urban airports offer faster travel options, bypassing road congestion and minimizing travel time. This improved efficiency can significantly enhance urban mobility, enabling people to reach their destinations more quickly.\n<br>\n<br>b. Enhanced Connectivity: Skydrome's urban airports bridge the gaps in existing transportation networks, connecting areas that are traditionally difficult to access. This enhanced connectivity facilitates better integration between different neighborhoods, suburbs, and city centers, fostering economic development and social cohesion.\n<br>\n<br>c. Environmental Sustainability: By utilizing electric-powered aerial vehicles, Skydrome contributes to reducing carbon emissions and mitigating the environmental impact of urban transportation. This shift towards sustainable air mobility aligns with global efforts to combat climate change and create cleaner, greener cities.\n<br>\n<br>d. Emergency Response and Medical Services: Skydrome urban airports can play a crucial role in emergency response and medical services. Air taxis and drones can swiftly transport medical professionals, supplies, and patients, enabling faster and more efficient emergency response and improving the accessibility of healthcare services.\n<br>\n<br><b>The Future of Skydrome and Urban Air Mobility \n</b><br>As the field of urban air mobility continues to expand, Skydrome is poised to play a pivotal role in shaping its future. With ongoing research and development, partnerships, and collaborations, Skydrome aims to establish a robust network of urban airports, enabling widespread adoption of aerial transportation. As technology advances and regulations adapt to accommodate this emerging industry, the vision of a seamlessly integrated urban air mobility system becomes closer to reality.<br>\n<br><b>Conclusion \n</b><br>Skydrome is spearheading the urban air mobility revolution by envisioning a future where aerial vehicles seamlessly integrate into our daily lives. With their innovative urban airports, Skydrome offers a comprehensive solution to the challenges of urban transportation, providing faster, efficient, and sustainable travel options. By combining advanced infrastructure, cutting-edge technologies, and a focus on sustainability, Skydrome is reshaping the way we envision urban mobility. As the field of urban air mobility continues to evolve, Skydrome's vision and commitment to transforming transportation hold the potential to revolutionize the way we navigate our cities, creating a more connected, efficient, and sustainable urban environment for generations to come.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tZE7079t9X",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
